@@ -1,0 +1,312 @@
+ *{
+	margin: 0;
+	padding: 0;
+ }
+ body{
+ 	background: url(img/gold-fon.jpg);
+ 	background-attachment: fixed;
+ 	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+ }
+ h1{
+ 	font-size: 48px;
+ 	font-weight: lighter;
+ 	color: #a10032;
+ }
+ h1.top{
+	padding: 80px 0 0 40px;
+ }
+ h1.bottom{
+ 	padding-left: 300px;
+ }
+ .main{
+ 	width: 70%;
+ 	margin: auto;
+ 	margin-top: 50px;
+ 	margin-bottom: 50px;
+ 	background: #eeece1;
+ 	box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+
+ 	
+ }
+ header{
+	position: sticky;
+	top: -300px;
+	z-index: 2;
+ }
+ .head{
+ 	height: 300px;
+ 	background: url(img/fon-head1.jpg);
+ }
+
+ nav{
+ 	background: linear-gradient(90deg,#FFCA40, #9c4e03) ;
+
+ 	height: 61px;
+ }
+ul{
+	display: flex;
+	list-style: none;
+}
+li{
+	margin: 15px 0;
+}
+nav a{
+	text-decoration: none;
+	font-size: 28px;
+	padding: 15px 40px 13px;
+	color: #A65900;
+	/*background: #FFCA40;*/
+}
+nav a.activ{
+	background: #e4d808;
+}
+
+nav a:hover{
+	background: #FFA640;
+}
+
+h2{
+	font-size: 34px;
+	margin: 30px 0 30px;
+	font-weight: lighter;
+	text-align: center;
+}
+
+.about{
+	padding-top: 50px;
+	display: flex;
+	width: 80%;
+	margin: auto;
+}
+.right{
+	margin-left: 50px;
+}
+.right h2{
+	text-align: left;
+}
+
+.news{
+	width: 80%;
+	margin: auto;
+}
+
+.news p{
+	font-size: 18px;
+}
+
+.classes{
+	width: 80%;
+	margin: auto;
+}
+.classes img{
+	width: 300px;
+}
+footer{
+	height: 70px;
+	background: url(img/fon-head1.jpg);
+}
+
+/*Слайдер*/
+
+.slider{
+	max-width: 900px;
+	margin: 20px auto;
+}
+.sl img{
+	width: 100%;
+}
+.sl_slide{
+	position: relative;
+}
+.sl_text{
+	position: absolute;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.7);
+	width: 100%;
+	color: #fff;
+	text-align: center;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+	padding: 20px 0;
+}
+.sl_zag, .sl_desc{
+	maggin: 0;
+	padding: 0 10px;
+}
+
+
+.sl2{
+	margin: 40px 0 0;
+}
+.sl2_slide{
+	margin: 0 7px;
+	outline: none;
+}
+.sl2_slide img{
+	width: 100%;
+	background: #d0d0dd;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: bacground .3s;
+}
+.sl2_slide img:hover, .slick-current img{
+	background: #fff;
+}
+
+.slick-dots li button{
+	border: 2px solid #274a23;
+	border-radius: 50%;
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+	transition: border-color .3s;
+}
+
+.slick-dots li button:before{
+	content: '';
+	width: 10px;
+	height: 10px;
+	background: #274a23;
+	opacity: 1;
+	border-radius: 50%;
+	top: 50%;
+	left: 50%;
+	margin: -5px 0 0 -5px;
+}
+
+.slick-dots li button:hover, 
+.slick-dots li.slick-active button{
+	border-color: #fff;
+}
+
+.slick-dots li button:hover:before,
+.slick-dots li.slick-active button:before{
+	background: #fff;
+}
+
+.slick-prev, .slick-next{
+	z-index: 1;
+	width: 28px;
+	height: 28px;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+}
+.slick-prev{
+	left: 25px;
+}
+.slick-next{
+	right: 25px;
+}
+.slick-prev:before, .slick-next:before{
+	font-size: 28px;
+}
+
+
+
+
+/*График*/
+
+
+.grath{
+	text-align: center;
+}
+.grath table{
+	background: black;
+	width: 80%;
+	margin: auto;
+	margin-bottom: 30px;
+}
+.grath h3{
+	margin-bottom: 30px;
+	font-size: 24px;
+}
+.grath tr.tablehead{
+	background: #eeece1;
+}
+.grath tr.mon{
+	background: #00b050;
+}
+.grath tr.tue{
+	background: #ffff00;
+}
+.grath tr.wed{
+	background: #ff00ff;
+}
+.grath tr.thu{
+	background: #00b0f0;
+}
+.grath tr.fri{
+	background: #ffc000;
+}
+
+.grath td, th{
+	/*background: #fff;*/
+	padding: 5px;
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Галлерея фотографий*/
+.librery{
+	margin: 0 10px;
+}
+.librery .item{
+	display: inline-block;
+
+}
+.librery a{
+	display: inline-block;
+	width: 220px;
+	margin: 10px;
+}
+.librery img{
+	max-width: 100%;
+
+}
+
+/*Анимация картинок*/
+
+.image-source-link {
+	color: #98C3D1;
+}
+
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+	opacity: 0;
+	-webkit-backface-visibility: hidden;
+	/* ideally, transition speed should match zoom duration */
+	-webkit-transition: all 0.5s ease-out; 
+	-moz-transition: all 0.5s ease-out; 
+	-o-transition: all 0.5s ease-out; 
+	transition: all 0.5s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+		opacity: 1;
+}
+.mfp-with-zoom.mfp-ready.mfp-bg {
+		opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container, 
+.mfp-with-zoom.mfp-removing.mfp-bg {
+	opacity: 0;
+}
+
+
+
+
+@media screen and (max-width: 1350px){
+	.slider{
+	margin: 20px 25px;
+}
+}
