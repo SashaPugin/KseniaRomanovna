@@ -1,46 +1,37 @@
-// $(document).ready(function(){
-// 	$(".item").magnificPopup({
-// 		type: 'image',
-// 		gallery:{
-// 			enabled : true
-// 		},
-// 		removalDelay: 300,
-// 		mainClass: 'mfp-fade'
-// 	});
-// }); 
+
 
 $(document).ready(function() {
-	// $('.item').magnificPopup({
-	// 	// delegate: 'a',
-	// 	type: 'image',
-	// 	closeOnContentClick: false,
-	// 	closeBtnInside: false,
-	// 	mainClass: 'mfp-with-zoom mfp-img-mobile',
-	// 	image: {
-	// 		verticalFit: true,
-	// 		titleSrc: function(item) {
-	// 			return item.el.attr('title') + ' &middot; <a class="image-source-link" href="'+item.el.attr('data-source')+'" target="_blank">image source</a>';
-	// 		}
-	// 	},
-	// 	gallery: {
-	// 		enabled: true
-	// 	},
-	// 	zoom: {
-	// 		enabled: true,
-	// 		duration: 300, // don't foget to change the duration also in CSS
-	// 		opener: function(element) {
-	// 			return element.find('img');
-	// 		}
-	// 	}
-		
-	// });
+	$('.item').magnificPopup({
+		// delegate: 'a',
+		type: 'image',
+		closeOnContentClick: false,
+		closeBtnInside: false,
+		mainClass: 'mfp-with-zoom mfp-img-mobile',
+		image: {
+			verticalFit: true,
+			titleSrc: function(item) {
+				return item.el.attr('title') + ' &middot; <a class="image-source-link" href="'+item.el.attr('data-source')+'" target="_blank">image source</a>';
+			}
+		},
+		gallery: {
+			enabled: true
+		},
+		zoom: {
+			enabled: true,
+			duration: 300, // don't foget to change the duration also in CSS
+			opener: function(element) {
+				return element.find('img');
+			}
+		}
+		});
+	});
 	$('.sl').slick({
-		// autoplay: true,
-		// autoplaySpeed: 10000,
+		autoplay: true,
+		autoplaySpeed: 5000,
 		speed: 600,
 		zIndex: 0,
 		asNavFor: '.sl2',
-
+		initialSlide: 4,
   });
 
   $('.sl2').slick({
@@ -49,6 +40,7 @@ $(document).ready(function() {
 		asNavFor: '.sl',
 		focusOnSelect: true,
 		slidesToShow: 7,
+		initialSlide: 4,
 		arrows: false,
 		centerMode: true,
 		centerPadding: '40px',
@@ -82,4 +74,3 @@ $(document).ready(function() {
 		]
 
   });
-});
