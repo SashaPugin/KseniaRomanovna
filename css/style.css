@@ -3,7 +3,7 @@
 	padding: 0;
  }
  body{
- 	background: url(img/gold-fon.jpg);
+ 	background: url(../img/gold-fon.jpg);
  	background-attachment: fixed;
  	font-family: 'Raleway', sans-serif;
 	font-size: 14px;
@@ -36,7 +36,7 @@
  }
  .head{
  	height: 300px;
- 	background: url(img/fon-head1.jpg);
+ 	background: url(../img/fon-head1.jpg);
  }
 
  nav{
@@ -104,7 +104,7 @@ h2{
 }
 footer{
 	height: 70px;
-	background: url(img/fon-head1.jpg);
+	background: url(../img/fon-head1.jpg);
 }
 
 /*Слайдер*/
