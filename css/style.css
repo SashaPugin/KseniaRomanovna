@@ -2,17 +2,16 @@
 	margin: 0;
 	padding: 0;
  }
+  ul{
+ 	list-style: none;
+ }
+ a{
+ 	text-decoration: none;
+ }
  
  body{
- 	background: url(../img/gold-fon.jpg);
- 	background-attachment: fixed;
  	font-family: 'Rubik', seans-serif;
- 	/*font-family: 'Raleway', sans-serif;*/
- 	/*font-family: 'Blinker', sans-serif;*/
- 	/*font-family: 'Roboto Condensed', sans-serif;*/
- 	/*font-family: 'Rubik', sans-serif;*/
- 	/*font-weight: bold;*/
- 	/*font-family: Rubik;*/
+ 	background: #fff;
  }
  h1{
  	font-size: 48px;
@@ -25,77 +24,78 @@
  h1.bottom{
  	padding-left: 300px;
  }
- .main{
- 	width: 70%;
- 	margin: auto;
- 	margin-top: 50px;
- 	margin-bottom: 50px;
- 	background: #eeece1;
- 	box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+ .page_layout{
+ 	width: 1100px;
+ 	margin:  auto;
+ 	display: flex;
 
- 	
+ }
+ aside{
+	width: 200px;
+	float: left;
+}
+aside nav{
+	position: sticky;
+	top: 0px;
+}
+ .page_body{
+ 	width: 900px;
+ 	margin: auto;
  }
  header{
-	position: sticky;
-	top: -300px;
-	z-index: 2;
+
  }
  .head{
- 	height: 300px;
+ 	height: 450px;
  	background: url(../img/fon-head1.jpg);
  }
 
- nav{
- 	background: linear-gradient(90deg,#FFCA40, #9c4e03) ;
-
- 	height: 61px;
+ header nav{
+	width: 1100px;
+	margin: 50px auto;
  }
-ul{
-	display: flex;
-	list-style: none;
-}
-li{
-	margin: 15px 0;
+
+header li{
+	margin: 0px 35px 25px 0;
+	display: inline-block;
 }
 nav a{
-	text-decoration: none;
-	font-size: 12px;
-	padding: 15px 10px 13px;
+	font-size: 18px;
 	color: #000;
-	/*background: #FFCA40;*/
+	font-style: italic;
 }
-nav a.activ{
-	background: #e4d808;
+header nav a.activ{
+	border-bottom: 2px solid #aa4d00;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
-nav a:hover{
-	background: #FFA640;
+header nav a:hover{
+	color: #aa4d00;
 }
+
+aside nav{
+
+}
+
 
 h2{
 	font-size: 34px;
-	margin: 30px 0 30px;
+	/*margin: 30px 0 30px;*/
 	font-weight: lighter;
 	text-align: center;
 }
 
-.about{
-	padding-top: 50px;
-	display: flex;
-	width: 80%;
-	margin: auto;
-}
-.right{
-	margin-left: 50px;
+
+.about .left{
+	float: left;
 }
 .right h2{
 	text-align: left;
 }
-
-.news{
-	width: 80%;
-	margin: auto;
+.about img{
+	margin: 0 30px 20px 0;
 }
+
 
 .news p{
 	font-size: 18px;
