@@ -25,6 +25,7 @@ $(document).ready(function() {
 		}
 		});
 	});
+
 	$('.sl').slick({
 		autoplay: true,
 		autoplaySpeed: 5000,
@@ -74,3 +75,4 @@ $(document).ready(function() {
 		]
 
   });
+	
