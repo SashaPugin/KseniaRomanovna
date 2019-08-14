@@ -14,13 +14,27 @@
  	background: #fff;
  }
  h1{
- 	font-size: 36px;
+ 	font-family: 'Catamaran', sans-serif;
+ 	font-family: 'Raleway', sans-serif;
+ 	font-family: 'Pacifico', cursive;
+ 	font-size: 48px;
  	font-weight: lighter;
- 	color: #3f156d;
+ 	color: #2c0533bf;
  	width: 1100px;
 	margin: 0 auto;
-	padding-top: 150px;
+	padding-top: 100px;
+	text-align: center;
  }
+ .quote{
+ 	text-align: right;
+ 	margin: 100px 50px 0 0;
+ }
+  .quote p{
+  	font-style: italic;
+  }
+   .quote blockquote{
+   	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+   }
 
  .page_layout{
  	width: 1100px;
@@ -67,12 +81,12 @@ nav a{
 	font-style: italic;
 }
 nav a.activ{
-	border-bottom: 2px solid #aa4d00;
+	border-bottom: 2px solid #7c93e1;
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
-header nav a:hover{
-	color: #aa4d00;
+nav a:hover{
+	color: #7c93e1;
 }
 
 aside nav{
@@ -81,22 +95,27 @@ aside nav{
 
 
 h2{
+	font-family: 'Catamaran', sans-serif;
+ 	font-family: 'Raleway', sans-serif;
+ 	/*font-family: 'Pacifico', cursive;*/
 	font-size: 40px;
-	font-weight: lighter;
+	font-weight: bold;
 	text-align: center;
-	color: #b05100;
+	color: #a285e3b5;
 	margin-bottom: 30px;
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
 }
 
 footer{
 	height: 70px;
-	background: url(../img/fon-head1.jpg);
+	background: url(../img/fon-head6.jpg);
 }
 
 /*Главная*/
 
-
+.info p{
+	margin-bottom: 20px;
+}
 
 
 
@@ -142,7 +161,7 @@ footer{
 	font-size: 20px;
 }
 .contacts span{
-	color: #b05100;
+	color: #d294e1;
 }
 /*.address{
 	border: 2px solid #b05100;
