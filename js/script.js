@@ -76,3 +76,35 @@ $(document).ready(function() {
 
   });
 	
+	// $(document).ready(function(){
+	// 	var $element = $('.footer');
+	// 	let counter = 0;
+	// $(window).scroll(function() {
+	// 	var scroll = $(window).scrollTop() + $(window).height();
+	// 	var offset = $element.offset()
+
+	// 	if (scroll > offset.top && counter == 0){
+	// 		$('#block').fadeIn(500);
+	// 		counter = 1;
+	// 	}
+	// });
+	// $('but').click(function(){
+	// 	$('#block').slideUp();
+	// });
+	// });
+
+// var p = $('.page_layout');
+// var offset = p.offset();
+// p.html('left:' + offset.left + 'top:' + offset.top);
+
+// $(document).ready(function(){
+// 	var $element = $('nav');
+// 	$(window).scroll(function(){
+// 		var scroll = $(window).scrollTop()+300;
+// 		var offset = $element.offset().top;
+
+// 		if(scroll > offset){
+// 			$('nav').unwrap('aside');
+// 		}
+// 	})
+// })

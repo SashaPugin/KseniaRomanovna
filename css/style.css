@@ -97,10 +97,11 @@ aside nav{
 
 
 h2{
-	font-family: 'Catamaran', sans-serif;
- 	font-family: 'Raleway', sans-serif;
+	/*font-family: 'Catamaran', sans-serif;
+ 	font-family: 'Raleway', sans-serif;*/
  	/*font-family: 'Pacifico', cursive;*/
-	font-size: 40px;
+ 	font-family: 'Time new Roman';
+	font-size: 48px;
 	font-weight: bold;
 	text-align: center;
 	color: #a285e3b5;
@@ -112,6 +113,7 @@ h2{
 footer{
 	height: 70px;
 	background: url(../img/fon-head6.jpg);
+	margin-top: 50px;
 }
 
 /*Главная*/
@@ -125,10 +127,41 @@ footer{
 
 
 /*О педагоге*/
-.about{
-	height: 700px;
+.about .card{
+	display: flex;
 }
-
+.about h3{
+	font-size: 60px;
+	font-family: 'Times new Roman';
+	text-align: center;
+	font-style: italic;
+	color: #0070c0;
+	margin-left: 100px;
+	margin-top: 100px;
+}
+.about img{
+	width: 350px;
+	height: auto;
+	margin-left: 20px;
+	padding-bottom: 5px;
+	border-bottom: 5px solid #0070c0;
+}
+.about .text{
+	margin: 30px 0 0 40px;
+}
+.about .text p{
+	line-height: 2em;
+	margin-bottom: 1em;
+	font-size: 18px;
+}
+.about .text span{
+	font-weight: bold;
+}
+.about ul{
+	list-style: decimal;
+	padding-left: 40px;
+	line-height: 2em;
+}
 
 
 /*результаты педагогической деятельности*/
@@ -208,12 +241,6 @@ footer{
 
 
 
-
-
-
-
-
-
 /*Кружки*/
 .circles .card{
 	display: flex;
@@ -274,7 +301,8 @@ footer{
 /*Слайдер*/
 
 .slider{
-	max-width: 900px;
+	/*max-width: 900px;*/
+	width: 900px;
 	margin: 20px auto;
 }
 .sl img{
@@ -430,4 +458,87 @@ footer{
 	.slider{
 	margin: 20px 25px;
 }
+}
+@media screen and (max-width: 1200px){
+	header nav{
+		width: 90%;
+		/*margin: 50 auto;*/
+	}
+	.page_layout{
+		width: 90%;
+	}
+	.page_body{
+		width: 100%;
+	}
+	.slider{
+		width: 700px;
+	}
+}
+.info .text{
+	margin-right: 30px;
+}
+h1{
+	width: 100%;
+}
+@media screen and (max-width: 970px){
+	h1{
+		font-size: 40px;
+		padding-top: 20px;
+		width: 90%;
+		margin: auto;
+	}
+	.slider{
+		width: 550px;
+	}
+}
+@media screen and (max-width: 800px){
+	aside{
+		display: none;
+	}
+	.page_body{
+		width: 90%;
+		margin: 0 auto;
+	}
+}
+@media screen and (max-width: 690px){
+	.slider{
+		width: 400px;
+	}
+}
+@media screen and (max-width: 584px){
+	header .quote{
+		margin-top: 20px;
+	}
+}
+@media screen and (max-width: 555px){
+	h1{
+		font-size: 30px;
+		padding-top: 100px;
+	}
+}
+@media screen and (max-width: 515px){
+	.slider{
+		width: 250px;
+	}
+}
+@media screen and (max-width: 476px){
+	header .quote{
+		width: 95%;
+		margin: 20px auto;
+	}
+}
+@media screen and (max-width: 442px){
+	h1{
+		padding-top: 50px;
+	}
+}
+@media screen and (max-width: 420px){
+	header .quote{
+		display: none;
+	}
+}
+@media screen and (max-width: 330px){
+		.slider{
+		width: 200px;
+	}
 }
