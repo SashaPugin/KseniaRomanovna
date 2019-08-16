@@ -97,14 +97,45 @@ $(document).ready(function() {
 // var offset = p.offset();
 // p.html('left:' + offset.left + 'top:' + offset.top);
 
-// $(document).ready(function(){
-// 	var $element = $('nav');
-// 	$(window).scroll(function(){
-// 		var scroll = $(window).scrollTop()+300;
-// 		var offset = $element.offset().top;
+	$(document).ready(function(){
+		var $element = $('header ul');
+		var scroll = $(window).scrollTop();
+		var offset = $element.offset().top+$element.height();
 
-// 		if(scroll > offset){
-// 			$('nav').unwrap('aside');
-// 		}
-// 	})
+		if($(window).width()>1044 && scroll > offset){
+			$('aside').css('display', 'block');
+		} 
+	});
+
+	var $element = $('header ul');
+	$(window).scroll(function(){
+		var scroll = $(window).scrollTop();
+		var offset = $element.offset().top+$element.height();
+
+		if($(window).width()>1044 && scroll > offset){
+			$('aside').css('display', 'block');
+		} 
+	});
+
+	var $element = $('header ul');
+	$(window).scroll(function(){
+		var scroll = $(window).scrollTop();
+		var offset = $element.offset().top+$element.height();
+
+		if($(window).width()>1044 && scroll < offset){
+			$('aside').css('display', 'none');
+		} 
+	});
+
+
+	// var $element2 = $('aside');
+	// $(window).scroll(function(){
+	// 	var scroll2 = $(window).scrollTop();
+	// 	var offset2 = $element2.offset().top+600;
+
+	// 	if(scroll2 < offset2){
+	// 		$('aside').css('display', 'none');
+	// 	}
+	// })
+
 // })
